@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Getter
@@ -25,6 +26,8 @@ public class Posts {
     @OneToMany
     @JoinColumn(name = "comments_id")
     private Posts posts;
+
+
 
 
 }
